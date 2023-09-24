@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SignUp/SignIn</title>
+    <link rel="stylesheet" href="signUp.css">
+    <script src="https://kit.fontawesome.com/b9e49e7386.js" crossorigin="anonymous"></script>
+
+    <header>
+        <div>
+            <nav class="navbar" id="navbar">
+
+                <a href="./index.html" id="Home">Home</a> 
+                <a href="./cafe.html">Cafe</a>
+                <a href="./restaurant.html">Restaurant</a>
+                <a href="./index.html" id="Location">Location</a>
+                <a href="/ourTeam.html" id="Our Team">Our Team</a>
+                <a href="./index.html" id="Contact">Contact</a>
+
+
+                <!-- <input type="text" name="Search" placeholder="Search the Website" class="search"> -->
+
+
+            </nav>
+        </div>
+    </header>
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="form-box">
+            <h1 id="title">Sign Up</h1>
+            <form>
+                <div class="input-group">
+                    <div class="input-field" id="nameField">
+                        <i class="fa-solid fa-user"></i>
+                        <input type="text" name="Username" placeholder="Username" id="">
+                    </div>
+
+                    <div class="input-field">
+                        <i class="fa-solid fa-envelope"></i>
+                        <input type="email" name="email" placeholder="Email" id="">
+                    </div>
+
+                    <div class="input-field">
+                        <i class="fa-solid fa-lock"></i>
+                        <input type="password" name="password" placeholder="Password" id="">
+                    </div>
+                    <p>Forgot password <a href="#">Click Here!</a></p>
+                    <br>
+                    <p>Already have an account?<a href="SignIn.html">Sign In</a></p>
+                </div>
+                <div class="btn-field">
+                    <button type="button" id="signupBtn">Sign Up</button>
+                    <!-- <button type="button" id="signinBtn" class="disable">Sign In</button> -->
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script>
+
+        let signupBtn = document.getElementById("signupBtn");
+        let signinBtn = document.getElementById("signinBtn");
+        let nameField = document.getElementById("nameField");
+        let title = document.getElementById("title");
+
+
+        signinBtn.onclick = function () {
+            nameField.style.maxHeight = "0";
+            title.innerHTML = "Sign In";
+            signupBtn.classList.add("disable");
+            signinBtn.classList.remove("disable");
+        }
+
+        signupBtn.onclick = function () {
+            nameField.style.maxHeight = "60px";
+            title.innerHTML = "Sign Up";
+            signupBtn.classList.remove("disable");
+            signinBtn.classList.add("disable");
+        }
+
+    </script>
+</body>
+<tfoot>
+
+    <div class="btt">
+        <a href="#navbar">Back To Top</a>
+    </div>
+
+    <div class="footer">
+        <ul>
+            <h4>ABOUT SIDDHIVINAYAK</h4>
+
+            <p>Who we are</p>
+
+            <p>Blog</p>
+
+            <p>Work With Us</p>
+
+            <p>Report Fraud</p>
+
+            <p>Contact Us</p>
+        </ul>
+        <ul>
+            <h4>ABOUT SIDDHIVINAYAK</h4>
+
+            <p>Who we are</p>
+
+            <p>Blog</p>
+
+            <p>Work With Us</p>
+
+            <p>Report Fraud</p>
+
+            <p>Contact Us</p>
+        </ul>
+        <ul>
+            <h4>ABOUT SIDDHIVINAYAK</h4>
+
+            <p>Who we are</p>
+
+            <p>Blog</p>
+
+            <p>Work With Us</p>
+
+            <p>Report Fraud</p>
+
+            <p>Contact Us</p>
+        </ul>
+        <ul>
+            <h4>LEARN MORE</h4>
+
+            <p>Privacy</p>
+
+            <p>Security</p>
+
+            <p>Terms</p>
+
+            <p>Sitemap</p>
+        </ul>
+
+    </div>
+    <div class="foot">
+        <p>
+        <P>By continuing past this page, you agree to our Terms of Service, Cookie Policy, Privacy Policy and Content
+            Policies. All trademarks are properties of their respective owners. 2008-2023 © Siddhivinayak™ Ltd. All rights
+            reserved.</P>
+        </p>
+    </div>
+
+</tfoot>
+
+</html>
